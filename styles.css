@@ -1,0 +1,229 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  color: #222222;
+  /* overflow: hidden; */
+
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.superinfor-bg {
+  background: gray;
+  color: white;
+}
+.superinfo {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.anuncio-gp{
+  background: rgb(126, 95, 236);
+  color: white;
+}
+.anuncio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+
+}
+.anuncio h1{
+  font-size: 70px;
+}
+.anuncio p{
+  font-size: 20px;
+}
+
+
+
+
+.menu-bg {
+  background: #000000;
+}
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+}
+.menu-logo a {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-nav a {
+  font-size: 1.25em;
+  display: block;
+  padding: 10px;
+}
+
+.menu-nav a:hover {
+  color: #56586f;
+}
+/* conteiner */
+.grid-container{
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* width: calc(100% - 24px); */
+  box-sizing: border-box;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap:15px;
+  margin:10px;
+  
+}
+
+.grid-item{
+  display: grid;
+  grid-auto-rows: minmax(100px, auto); 
+	
+  
+  /* flex-direction: row;
+  
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+    margin: 0px;
+    padding: 10px; */
+    
+  }
+  .row{
+  width: 100%;
+  position: relative;
+}
+.row a{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.img {
+  display: grid;
+  grid: 100px / 1fr 1fr;
+  background-image: url('assets/cobrinha.png')
+  
+
+}img:hover{
+  transform: scale(1.02);
+  transition:all 1.2s;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #FFF;
+  background: #8FD211;
+  border-color: #6A9E06;
+  position: absolute;
+  bottom: -350px; right: 750px;
+  padding: 10px;
+}
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'header'
+      'sidenav'
+      'content'
+      'anuncios'
+      'footer';
+  }
+.button:hover{
+  background: #6A9E06;
+  padding: 10px;
+  
+  
+}
+.button a{
+  color: white;
+
+}
+.btn-position{
+  position: relative;
+}
+.contato{
+  background:  rgb(126, 95, 236);
+  color: white;
+}
+.contato-op{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* body::-webkit-scrollbar {
+  width: 18px;             
+}
+
+body::-webkit-scrollbar-track {
+  background: gray;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(250, 9, 89);    
+} */
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.typedtext {
+  margin-top: 50px;
+  border-right: 2px solid white;
+  animation: blinkTextCursor 800ms steps(44) infinite normal;
+  height: 40px;
+  margin-bottom: 55px;
+  color: #fff;
+  display: block;
+  font-size: 40px;
+}
+
+@keyframes blinkTextCursor {
+  from {
+
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
